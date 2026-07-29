@@ -16,7 +16,7 @@ body{
        width: 90%;
    margin: auto;
 
-   animation: aparecer 2s ease;
+   animation: aparecer 1.2s ease;
    }
 
    .container p{
@@ -45,15 +45,16 @@ body{
    }
 
    button:hover{
-      background-color: #350335;
-      transform: translateY(-3px);
+       background-color: #c913c9;
+    transform: scale(1.08); 
+      box-shadow: 0 0 20px rgba(201, 19, 201, 0.6);
    }
-   @keyframes aparecer {
-      from {
+   @keyframes aparecer{
+      from{
          opacity: 0;
-         transform: translateY(20px);
+         transform: translateY(30px);
       }
-      to {
+      to{
          opacity: 1;
          transform: translateY(0);
       }
@@ -66,12 +67,15 @@ body{
 
    .carta{
       width: 85%;
-      background-color: rgba(255, 255, 255, 0.08);
-      padding: 20px;
+       background: rgba(77, 0, 38, 0.75);
+      padding: 25px;
       border-radius: 20px;
       max-width: 500px;
       margin: 20px auto;
       text-align: center;
+      animation: aparecer 1s ease;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
    }
 
    .carta p{
@@ -86,3 +90,135 @@ body{
       margin-top: 10px;
       width: 300px;
    }
+
+   *{
+      font-family: "Poppins", sans-serif;
+   }
+
+   .coracao{
+      font-size: 4rem;
+      animation: pulsar 1.5s infinite;
+   }
+
+   @keyframes pulsar{
+      0%{
+         transform: scale(1);
+      }
+
+      50%{
+         transform: scale(1.15);
+      }
+
+      100%{
+         transform: scale(1);
+      }
+   }
+
+   .coracoes{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.coracoes span{
+    position: absolute;
+    bottom: -50px;
+    font-size: 25px;
+    animation: subir 8s linear infinite;
+}
+
+.coracoes span:nth-child(1){
+    left: 10%;
+}
+
+.coracoes span:nth-child(2){
+    left: 40%;
+    animation-delay: 2s;
+}
+
+.coracoes span:nth-child(3){
+    left: 70%;
+    animation-delay: 4s;
+}
+
+.coracoes span:nth-child(4){
+    left: 90%;
+    animation-delay: 6s;
+}
+
+@keyframes subir{
+
+    from{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to{
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+
+}
+
+.esconder{
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.mostrar{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s ease;
+}
+
+#btn-pronta{
+   transition: 0.5s ease;
+
+}
+
+.entrada{
+    text-align: center;
+    animation: aparecer 1s ease;
+}
+
+.escondido{
+    display: none;
+}
+
+.saindo{
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.revelar{
+    animation: revelarCarta 1.2s ease;
+}
+
+@keyframes revelarCarta{
+    from{
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.momento{
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    text-align: left;
+    border-left: 4px solid #c913c9;
+    animation: aparecer 1s ease;
+}
+
+.momento h3{
+    color: #ff66ff;
+    margin-bottom: 10px;
+}
