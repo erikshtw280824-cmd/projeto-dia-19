@@ -222,3 +222,661 @@ body{
     color: #ff66ff;
     margin-bottom: 10px;
 }
+
+.pagina-menu .container{
+    width: 90%;
+    max-width: 650px;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.pagina-menu .cabecalho-menu {
+   text-align: center;
+   margin-bottom: 25px;
+}
+
+.pagina-menu .cabecalho-menu h1{
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.pagina-menu .cabecalho-menu p{
+    font-size: 1.2rem;
+    color: #f0cddd;
+    line-height: 1.6;
+}
+
+.pagina-menu .menu-opcoes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.pagina-menu .cartao-opcao {
+   display:flex;
+   align-items: center;
+   gap: 15px;
+   padding: 15px 20px;
+   border: 1px solid rgba(255, 190,220,0.25);
+   border-radius: 15px;
+   background: rgba(110, 15, 65, 0.55);
+   color: white;
+   text-decoration: none;
+   transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+   box-sizing: border-box;
+}
+
+.pagina-menu .cartao-opcao:hover{
+    transform: translateY(-5px);
+    background: rgba(110, 15, 65, 0.75);
+    box-shadow: 0 0 20px rgba(201, 19, 201, 0.6);
+}
+
+.pagina-menu .icone {
+   font-size: 1.8rem;
+   min-width: 35px;
+   text-align: center;
+}
+
+.pagina-menu .texto-opcao {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   flex: 1;
+}
+
+.pagina-menu .texto-opcao strong {
+    font-size: 1rem;
+}
+
+.pagina-menu .texto-opcao small {
+    color: #e9bfd2;
+    font-size: 0.85rem;
+}
+
+.pagina-menu .seta {
+    font-size: 1.8rem;
+    color: #ffb6d5;
+}
+
+.pagina-menu .menu-opcoes .cartao-opcao.opcao-entre-nós {
+    background: #111111;
+    border: 1px solid #777777;
+    color: #ffffff;
+    margin-top: 6px;
+}
+
+.pagina-menu .menu-opcoes .cartao-opcao.opcao-entre-nós:hover {
+    background: #292929;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.1);
+}
+
+.pagina-menu .opcao-entre-nós .icone,
+.pagina-menu .opcao-entre-nós .texto-opcao,
+.pagina-menu .opcao-entre-nós .seta {
+    position: static;
+    transform: none;
+}
+
+.pagina-menu .opcao-entre-nós .texto-opcao small,
+.pagina-menu .opcao-entre-nós .seta {
+    color: #d0d0d0;
+}
+
+@media (max-width: 480px) {
+    .pagina-menu .container {
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    .pagina-menu .cabecalho-menu h1 {
+        font-size: 2.3rem;
+    }
+
+    .pagina-menu .cabecalho-menu p {
+        font-size: 1rem;
+    }
+
+    .pagina-menu .menu-opcoes .cartao-opcao {
+        gap: 10px;
+        padding: 14px;
+    }
+
+    .pagina-menu .cartao-opcao .texto-opcao strong {
+        font-size: 0.95rem;
+    }
+
+    .pagina-menu .cartao-opcao .texto-opcao small {
+        font-size: 0.8rem;
+    }
+}
+
+
+.pagina-menu .menu-opcoes .opcao-entre-nos {
+    background: #111111;
+    border: 1px solid #777777;
+    color: #ffffff;
+}
+
+.pagina-menu .menu-opcoes .opcao-entre-nos:hover {
+    background: #292929;
+    border-color: #aaaaaa;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.12);
+}
+
+.pagina-menu .opcao-entre-nos .icone,
+.pagina-menu .opcao-entre-nos .seta {
+    color: #ffffff;
+}
+
+.pagina-menu .opcao-entre-nos .texto-opcao small {
+    color: #c7c7c7;
+}
+
+
+.pagina-entre-nos {
+    background: #090909;
+    color: #f5f5f5;
+}
+
+.pagina-entre-nos .livro-container {
+    width: 90%;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.pagina-entre-nos .capa-livro {
+    width: 100%;
+    max-width: 420px;
+    min-height: 540px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #292929, #080808 65%);
+    border: 2px solid #555;
+    border-radius: 8px 18px 18px 8px;
+    box-shadow: 12px 15px 35px rgba(0, 0, 0, 0.65);
+    text-align: center;
+}
+
+.pagina-entre-nos .capa-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagina-entre-nos .simbolo-livro {
+    font-size: 3rem;
+    color: #e5e5e5;
+}
+
+.pagina-entre-nos .capa-livro h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.pagina-entre-nos .capa-livro p {
+    color: #c7c7c7;
+    line-height: 1.7;
+}
+
+
+
+.pagina-entre-nos #btn-abrir-livro {
+    margin-top: 20px;
+    padding: 12px 28px;
+    border: 1px solid #aaa;
+    border-radius: 30px;
+    background: #171717;
+    color: white;
+    cursor: pointer;
+}
+
+.pagina-entre-nos #btn-abrir-livro:hover {
+    background: #333;
+}
+
+
+
+.pagina-entre-nos .livro-aberto {
+    width: 100%;
+    animation: aparecer 0.8s ease;
+}
+
+.pagina-entre-nos .cabecalho-capitulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pagina-entre-nos .cabecalho-capitulo > p {
+    color: #aaa;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+}
+
+.pagina-entre-nos .cabecalho-capitulo h2 {
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+
+
+.pagina-entre-nos .paginas-livro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background: #d9d0bd;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.pagina-entre-nos .pagina {
+    min-width: 0;
+    padding: 30px;
+    color: #24211d;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+.pagina-entre-nos .pagina-esquerda {
+    border-right: 1px solid #a49a87;
+    background: linear-gradient(to right, #c9c0ad, #e9e0ce);
+}
+
+.pagina-entre-nos .pagina-direita {
+    background: linear-gradient(to left, #c9c0ad, #e9e0ce);
+}
+
+.pagina-entre-nos .pagina h3 {
+    text-align: center;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+/* NAVEGAÇÃO */
+
+.pagina-entre-nos .navegacao-capitulos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.pagina-entre-nos .navegacao-capitulos button,
+.pagina-entre-nos .voltar-menu {
+    padding: 10px 18px;
+    border: 1px solid #777;
+    border-radius: 25px;
+    background: #171717;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pagina-entre-nos .navegacao-capitulos button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.pagina-entre-nos .voltar-menu {
+    display: inline-block;
+}
+
+
+.pagina-entre-nos .escondido {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    .pagina-entre-nos .livro-container {
+        width: 94%;
+        padding: 25px 0;
+    }
+
+    .pagina-entre-nos .capa-livro {
+        min-height: 440px;
+    }
+
+    .pagina-entre-nos .capa-livro h1 {
+        font-size: 2.3rem;
+    }
+
+    .pagina-entre-nos .cabecalho-capitulo h2 {
+        font-size: 1.2rem;
+    }
+
+    .pagina-entre-nos .pagina {
+        padding: 14px 10px;
+        font-size: 0.85rem;
+        line-height: 1.7;
+    }
+
+    .pagina-entre-nos .navegacao-capitulos button {
+        padding: 9px 12px;
+        font-size: 0.85rem;
+    }
+}
+
+
+/* =====================================
+   ENTRE NÓS — LIVRO DE MEMÓRIAS
+===================================== */
+
+.pagina-entre-nos {
+    min-height: 100vh;
+    margin: 0;
+    background: #0b0b0b;
+    color: #f5f5f5;
+    font-family: "Poppins", sans-serif;
+}
+
+.pagina-entre-nos .livro-container {
+    width: min(900px, 90%);
+    margin: 0 auto;
+    padding: 65px 0 35px;
+}
+
+/* Título */
+
+.pagina-entre-nos .titulo-galeria {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.pagina-entre-nos .titulo-galeria > p:first-child {
+    color: #999;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.pagina-entre-nos .titulo-galeria h1 {
+    margin: 18px 0;
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 8vw, 70px);
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+.pagina-entre-nos .titulo-galeria h1 span {
+    color: #888;
+}
+
+.pagina-entre-nos .titulo-galeria > p:last-child {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Lista de capítulos */
+
+.pagina-entre-nos .grade-capitulos {
+    display: grid;
+    gap: 13px;
+}
+
+.pagina-entre-nos .cartao-capitulo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    min-height: 100px;
+    padding: 22px 25px;
+    color: #f5f5f5;
+    text-align: left;
+    background: #141414;
+    border: 1px solid #303030;
+    border-radius: 8px;
+    cursor: pointer;
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.pagina-entre-nos .cartao-capitulo:hover {
+    background: #1c1c1c;
+    border-color: #777;
+    transform: translateY(-2px);
+}
+
+.pagina-entre-nos .numero-cartao {
+    color: #888;
+    font-family: Georgia, serif;
+    font-size: 25px;
+}
+
+.pagina-entre-nos .conteudo-cartao {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.pagina-entre-nos .conteudo-cartao strong {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.pagina-entre-nos .conteudo-cartao small {
+    color: #999;
+    font-size: 12px;
+}
+
+.pagina-entre-nos .seta-cartao {
+    color: #aaa;
+    font-size: 21px;
+}
+
+/* Capa de cada capítulo */
+
+.pagina-entre-nos .capa-livro {
+    min-height: 430px;
+    padding: 35px 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        linear-gradient(145deg, #1d1d1d, #090909 75%);
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+}
+
+.pagina-entre-nos .capa-conteudo {
+    max-width: 500px;
+}
+
+.pagina-entre-nos .simbolo-livro {
+    color: #bbb;
+    font-size: 32px;
+}
+
+.pagina-entre-nos .rotulo-capa {
+    margin-top: 28px;
+    color: #999;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+.pagina-entre-nos .capa-conteudo h2 {
+    margin: 20px 0 12px;
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 6vw, 48px);
+    font-weight: 400;
+}
+
+.pagina-entre-nos .capa-conteudo > p:not(.rotulo-capa) {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Botões */
+
+.pagina-entre-nos #btn-abrir-livro,
+.pagina-entre-nos .botao-voltar,
+.pagina-entre-nos .navegacao-capitulos button {
+    margin-top: 18px;
+    padding: 12px 18px;
+    color: #111;
+    background: #eee;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.pagina-entre-nos #btn-abrir-livro:hover,
+.pagina-entre-nos .botao-voltar:hover,
+.pagina-entre-nos .navegacao-capitulos button:hover:not(:disabled) {
+    background: #ccc;
+}
+
+.pagina-entre-nos .botao-voltar {
+    display: block;
+    margin: 12px auto 0;
+    color: #ddd;
+    background: transparent;
+    border-color: #555;
+}
+
+.pagina-entre-nos .navegacao-capitulos button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+/* Livro aberto */
+
+.pagina-entre-nos .cabecalho-capitulo {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.pagina-entre-nos .cabecalho-capitulo > p {
+    color: #999;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+.pagina-entre-nos .cabecalho-capitulo h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(25px, 5vw, 38px);
+    font-weight: 400;
+}
+
+.pagina-entre-nos .paginas-livro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    background: #eae7df;
+    color: #252525;
+    border-radius: 5px;
+    box-shadow: 0 15px 45px #0008;
+}
+
+.pagina-entre-nos .pagina {
+    min-height: 280px;
+    padding: clamp(20px, 5vw, 42px);
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.pagina-entre-nos .pagina-esquerda {
+    border-right: 1px solid #c9c3b8;
+}
+
+.pagina-entre-nos .pagina h3 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.pagina-entre-nos .navegacao-capitulos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.pagina-entre-nos #numero-capitulo {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.pagina-entre-nos .voltar-menu {
+    display: block;
+    width: fit-content;
+    margin: 35px auto 0;
+    color: #aaa;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.pagina-entre-nos .voltar-menu:hover {
+    color: #fff;
+}
+
+/* Elementos escondidos */
+
+.pagina-entre-nos .escondido {
+    display: none !important;
+}
+
+/* Celulares */
+
+@media (max-width: 600px) {
+    .pagina-entre-nos .livro-container {
+        padding-top: 38px;
+    }
+
+    .pagina-entre-nos .cartao-capitulo {
+        gap: 13px;
+        min-height: 90px;
+        padding: 17px 14px;
+    }
+
+    .pagina-entre-nos .conteudo-cartao strong {
+        font-size: 13px;
+    }
+
+    .pagina-entre-nos .conteudo-cartao small {
+        font-size: 11px;
+    }
+
+    .pagina-entre-nos .paginas-livro {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-entre-nos .pagina {
+        min-height: 170px;
+        padding: 25px;
+    }
+
+    .pagina-entre-nos .pagina-esquerda {
+        border-right: none;
+        border-bottom: 1px solid #c9c3b8;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pagina-entre-nos * {
+        transition: none !important;
+    }
+}
