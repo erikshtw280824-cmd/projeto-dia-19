@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entre Nós | Dia 19</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-entre-nos">
+
+    <main class="livro-container">
+
+        
+<section class="menu-capitulos" id="menu-capitulos">
+
+    <header class="titulo-galeria">
+        <p>UMA HISTÓRIA EM CAPÍTULOS</p>
+        <h1>Entre Nós<span>.</span></h1>
+        <p>Escolha um capítulo para começar.</p>
+    </header>
+
+    <div class="grade-capitulos">
+
+        <button class="cartao-capitulo" data-capitulo="0">
+            <span class="numero-cartao">01</span>
+            <span class="conteudo-cartao">
+                <strong>Capítulo 1 — O começo</strong>
+                <small>Onde nossa história começou</small>
+            </span>
+            <span class="seta-cartao">→</span>
+        </button>
+
+        <button class="cartao-capitulo" data-capitulo="1">
+            <span class="numero-cartao">02</span>
+            <span class="conteudo-cartao">
+                <strong>Capítulo 2 — Nossas lembranças</strong>
+                <small>Momentos que ficaram</small>
+            </span>
+            <span class="seta-cartao">→</span>
+        </button>
+
+        <button class="cartao-capitulo" data-capitulo="2">
+            <span class="numero-cartao">03</span>
+            <span class="conteudo-cartao">
+                <strong>Capítulo 3 — O que aprendi</strong>
+                <small>Reflexões e amadurecimento</small>
+            </span>
+            <span class="seta-cartao">→</span>
+        </button>
+
+        <button class="cartao-capitulo" data-capitulo="3">
+            <span class="numero-cartao">04</span>
+            <span class="conteudo-cartao">
+                <strong>Capítulo 4 — O que ficou</strong>
+                <small>Memórias e pequenos detalhes</small>
+            </span>
+            <span class="seta-cartao">→</span>
+        </button>
+
+        <button class="cartao-capitulo" data-capitulo="4">
+            <span class="numero-cartao">05</span>
+            <span class="conteudo-cartao">
+                <strong>Capítulo 5 — Um novo capítulo</strong>
+                <small>O futuro e novos caminhos</small>
+            </span>
+            <span class="seta-cartao">→</span>
+        </button>
+
+    </div>
+</section>
+
+
+<section class="capa-livro escondido" id="capa-capitulo">
+
+    <div class="capa-conteudo">
+        <span class="simbolo-livro">✳</span>
+
+        <p class="rotulo-capa">ENTRE NÓS · LEITURA</p>
+
+        <h2 id="titulo-capa">O começo</h2>
+
+        <p id="descricao-capa">
+            Onde nossa história começou
+        </p>
+
+        <button id="btn-abrir-livro">
+            Abrir capítulo →
+        </button>
+
+        <button class="botao-voltar" id="btn-voltar-capitulos">
+            ← Todos os capítulos
+        </button>
+    </div>
+
+</section>
+
+
+
+        <section class="livro-aberto escondido" id="livro-aberto">
+
+            <header class="cabecalho-capitulo">
+                <p>ENTRE NÓS</p>
+                <h2 id="titulo-capitulo">Capítulo 1 — Nosso primeiro dia</h2>
+            </header>
+
+            <div class="paginas-livro">
+
+                <article class="pagina pagina-esquerda">
+                    <h3 id="subtitulo-capitulo">O começo de tudo</h3>
+
+                    <p id="texto-esquerdo">
+                        Aqui ficará a primeira parte da nossa história.
+                    </p>
+                </article>
+
+                <article class="pagina pagina-direita">
+                    <p id="texto-direito">
+                        E aqui continuará a leitura, como em um livro aberto.
+                    </p>
+                </article>
+
+            </div>
+
+            <nav class="navegacao-capitulos">
+                <button id="btn-anterior" disabled>
+                    ← Anterior
+                </button>
+
+                <span id="numero-capitulo">1 / 5</span>
+
+                <button id="btn-proximo">
+                  Próximo →
+                </button>
+            </nav>
+
+        </section>
+
+        <a class="voltar-menu" href="menu.html">
+            Voltar ao menu
+        </a>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
