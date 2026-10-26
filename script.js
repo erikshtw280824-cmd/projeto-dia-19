@@ -1,16 +1,18 @@
 const botao = document.getElementById("btn-pronta");
-const carta = document.getElementById("primeira-carta");
+const mensagem = document.getElementById("mensagem-clique");
 
-if (botao && carta) {
-    botao.addEventListener("click", function () {
-        carta.style.display = "block";
+if (botao && mensagem) {
+    mensagem.addEventListener("click", () => {
+        botao.classList.remove("esconder");
+        botao.classList.add("mostrar");
     });
+}
 
     setTimeout(() => {
         botao.classList.remove("esconder");
         botao.classList.add("mostrar");
     }, 2500);
-}
+
 
 const texto = "bem-vinda, meu amor ❤️";
 const titulo = document.getElementById("titulo");
